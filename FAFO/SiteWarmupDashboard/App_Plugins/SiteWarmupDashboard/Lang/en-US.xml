@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<language>
+	<area alias="dashboardTabs">
+		<key alias="siteWarmupDashboard">Site Warmup</key>
+	</area>
+	<area alias="siteWarmupDashboard">
+		<key alias="heading">Site Warmup</key>
+		<key alias="bodytext">Let's make piles of cache.</key>		
+	</area>
+</language>

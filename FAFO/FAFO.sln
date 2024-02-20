@@ -3,12 +3,14 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.8.34330.188
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FAFO", "FAFO\FAFO.csproj", "{96EBB140-4661-4A12-8A78-6D8530C97F6C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FAFO", "FAFO\FAFO.csproj", "{96EBB140-4661-4A12-8A78-6D8530C97F6C}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{F6F4FC7B-9622-4A83-8CA7-80A3B4390AEA}"
 	ProjectSection(SolutionItems) = preProject
 		..\README.md = ..\README.md
 	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SiteWarmupDashboard", "SiteWarmupDashboard\SiteWarmupDashboard.csproj", "{FF383C81-F70C-4740-B363-451F28A38434}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -20,6 +22,10 @@ Global
 		{96EBB140-4661-4A12-8A78-6D8530C97F6C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{96EBB140-4661-4A12-8A78-6D8530C97F6C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{96EBB140-4661-4A12-8A78-6D8530C97F6C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FF383C81-F70C-4740-B363-451F28A38434}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FF383C81-F70C-4740-B363-451F28A38434}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FF383C81-F70C-4740-B363-451F28A38434}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FF383C81-F70C-4740-B363-451F28A38434}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

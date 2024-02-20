@@ -1,0 +1,21 @@
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <SiteWarmupDashboardContentFilesPath>$(MSBuildThisFileDirectory)..\App_Plugins\SiteWarmupDashboard\**\*.*</SiteWarmupDashboardContentFilesPath>
+  </PropertyGroup>
+
+  <Target Name="CopySiteWarmupDashboardAssets" BeforeTargets="BeforeBuild">
+    <ItemGroup>
+      <SiteWarmupDashboardContentFiles Include="$(SiteWarmupDashboardContentFilesPath)" />
+    </ItemGroup>
+    <Message Text="Copying SiteWarmupDashboard files: $(SiteWarmupDashboardContentFilesPath) - #@(SiteWarmupDashboardContentFiles->Count()) files" Importance="high" />
+    <Copy SourceFiles="@(SiteWarmupDashboardContentFiles)" DestinationFiles="@(SiteWarmupDashboardContentFiles->'$(MSBuildProjectDirectory)\App_Plugins\SiteWarmupDashboard\%(RecursiveDir)%(Filename)%(Extension)')" SkipUnchangedFiles="true" />
+  </Target>
+
+  <Target Name="ClearSiteWarmupDashboardAssets" BeforeTargets="Clean">
+    <ItemGroup>
+      <SiteWarmupDashboardDir Include="$(MSBuildProjectDirectory)\App_Plugins\SiteWarmupDashboard\" />
+    </ItemGroup>
+    <Message Text="Clear old SiteWarmupDashboard data" Importance="high" />
+    <RemoveDir Directories="@(SiteWarmupDashboardDir)" />
+  </Target>
+</Project>
