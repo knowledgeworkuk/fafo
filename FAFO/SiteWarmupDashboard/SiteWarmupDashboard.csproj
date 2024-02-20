@@ -5,7 +5,7 @@
     <Product>SiteWarmupDashboard</Product>
     <PackageId>SiteWarmupDashboard</PackageId>
     <Title>Umbraco Site Warmup Dashboard</Title>
-    <Description>...</Description>
+    <Description>An Umbraco dashboard for loading all site content to help with caching of newly launched or deployed sites.</Description>
     <PackageTags>umbraco plugin package</PackageTags>
     <AssemblyName>KnowledgeWork.FAFO.SiteWarmupDashboard</AssemblyName>
     <RootNamespace>KnowledgeWork.FAFO.SiteWarmupDashboard</RootNamespace>

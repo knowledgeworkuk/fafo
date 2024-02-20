@@ -4,15 +4,6 @@
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
   </PropertyGroup>
-  <ItemGroup>
-    <Content Include="App_Plugins\SiteWarmupDashboard\Lang\en-US.xml" />
-    <Content Include="App_Plugins\SiteWarmupDashboard\SiteWarmupDashboard.js" />
-    <Content Include="App_Plugins\SiteWarmupDashboard\SiteWarmupDashboard.css" />
-    <Content Include="App_Plugins\SiteWarmupDashboard\SiteWarmupDashboard.html" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="App_Plugins\SiteWarmupDashboard\package.manifest" />
-  </ItemGroup>
 
   <ItemGroup>
     <PackageReference Include="Umbraco.Cms" Version="13.0.3" />
@@ -23,6 +14,13 @@
     <PackageReference Include="Microsoft.ICU.ICU4C.Runtime" Version="68.2.0.9" />
     <PackageReference Include="uSync" Version="13.0.1" />
     <RuntimeHostConfigurationOption Include="System.Globalization.AppLocalIcu" Value="68.2.0.9" Condition="$(RuntimeIdentifier.StartsWith('linux')) or $(RuntimeIdentifier.StartsWith('win')) or ('$(RuntimeIdentifier)' == '' and !$([MSBuild]::IsOSPlatform('osx')))" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="App_Plugins\" />
+    <Folder Include="Controllers\" />
+    <Folder Include="Models\" />
+    <Folder Include="Services\" />
   </ItemGroup>
 
   <PropertyGroup>
