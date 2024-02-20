@@ -1,0 +1,17 @@
+﻿.site-warmup-dashboard .warmup-grid {
+    display:flex;
+    flex-direction:row;
+    flex-wrap:wrap;
+    justify-content:space-between;
+}
+
+
+.site-warmup-dashboard .warmup-block {
+    width:380px;
+}
+
+
+.site-warmup-dashboard .warmup-block iframe {
+    width: 380px;
+    height:180px;
+}

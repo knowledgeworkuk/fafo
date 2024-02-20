@@ -1,0 +1,18 @@
+﻿{
+    "dashboards":  [
+        {
+            "alias": "siteWarmupDashboard",
+            "view":  "/App_Plugins/SiteWarmupDashboard/SiteWarmupDashboard.html",
+            "sections":  [ "content" ],
+            "weight": -10,
+            "access": [
+                { "deny": "translator" },
+                { "grant": "admin" }
+            ]
+        }
+    ],
+  "javascript": [ "~/App_Plugins/SiteWarmupDashboard/SiteWarmupDashboard.js" ],
+  "css": [
+    "~/App_Plugins/SiteWarmupDashboard/SiteWarmupDashboard.css"
+  ]
+}

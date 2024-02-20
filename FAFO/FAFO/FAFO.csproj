@@ -4,6 +4,15 @@
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
   </PropertyGroup>
+  <ItemGroup>
+    <Content Include="App_Plugins\SiteWarmupDashboard\Lang\en-US.xml" />
+    <Content Include="App_Plugins\SiteWarmupDashboard\SiteWarmupDashboard.js" />
+    <Content Include="App_Plugins\SiteWarmupDashboard\SiteWarmupDashboard.css" />
+    <Content Include="App_Plugins\SiteWarmupDashboard\SiteWarmupDashboard.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App_Plugins\SiteWarmupDashboard\package.manifest" />
+  </ItemGroup>
 
   <ItemGroup>
     <PackageReference Include="Umbraco.Cms" Version="13.0.3" />
@@ -25,6 +34,8 @@
     <!-- Remove RazorCompileOnBuild and RazorCompileOnPublish when not using ModelsMode InMemoryAuto -->
     <RazorCompileOnBuild>false</RazorCompileOnBuild>
     <RazorCompileOnPublish>false</RazorCompileOnPublish>
+    <AssemblyName>KnowledgeWork.FAFO</AssemblyName>
+    <RootNamespace>KnowledgeWork.FAFO</RootNamespace>
   </PropertyGroup>
   
 </Project>
