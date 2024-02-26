@@ -1,34 +1,49 @@
-<Project Sdk="Microsoft.NET.Sdk">
-  <PropertyGroup>
-    <TargetFramework>net7.0</TargetFramework>
-    <ContentTargetFolders>.</ContentTargetFolders>
-    <Product>SiteWarmupDashboard</Product>
-    <PackageId>SiteWarmupDashboard</PackageId>
-    <Title>Umbraco Site Warmup Dashboard</Title>
-    <Description>An Umbraco dashboard for loading all site content to help with caching of newly launched or deployed sites.</Description>
-    <PackageTags>umbraco plugin package</PackageTags>
-    <AssemblyName>KnowledgeWork.FAFO.SiteWarmupDashboard</AssemblyName>
-    <RootNamespace>KnowledgeWork.FAFO.SiteWarmupDashboard</RootNamespace>
-    <PackageLicenseExpression>MIT</PackageLicenseExpression>
-    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
-    <PackageProjectUrl>https://github.com/knowledgeworkuk/fafo</PackageProjectUrl>
-    <Authors>Andy Carlier</Authors>
-  </PropertyGroup>
+﻿<Project Sdk="Microsoft.NET.Sdk">
+	<PropertyGroup>
+		<TargetFramework>net7.0</TargetFramework>
+		<ContentTargetFolders>.</ContentTargetFolders>
+		<Product>KnowledgeWork.FAFO.SiteWarmupDashboard</Product>
+		<PackageId>KnowledgeWork.FAFO.SiteWarmupDashboard</PackageId>
+		<Title>Umbraco Site Warmup Dashboard</Title>
+		<Description>
+			An Umbraco dashboard for loading all site content to help with caching of newly launched or deployed sites.
+			Originally created as a working example for a Meetup.
+		</Description>
+		<PackageTags>umbraco plugin package; umbraco-marketplace</PackageTags>
+		<AssemblyName>KnowledgeWork.FAFO.SiteWarmupDashboard</AssemblyName>
+		<RootNamespace>KnowledgeWork.FAFO.SiteWarmupDashboard</RootNamespace>
+		<PackageLicenseExpression>MIT</PackageLicenseExpression>
+		<PackageReadmeFile>readme.md</PackageReadmeFile>
+		<GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+		<PackageProjectUrl>https://github.com/knowledgeworkuk/fafo</PackageProjectUrl>
+		<Authors>Andy Carlier</Authors>
+		<PackageIcon>fafo.png</PackageIcon>
+	</PropertyGroup>
 
-  <ItemGroup>
-    <PackageReference Include="Umbraco.Cms.Web.Website" Version="12.3.3" />
-    <PackageReference Include="Umbraco.Cms.Web.BackOffice" Version="12.3.3" />
-  </ItemGroup>
+	<ItemGroup>
+		<PackageReference Include="Umbraco.Cms.Web.Website" Version="12.3.3" />
+		<PackageReference Include="Umbraco.Cms.Web.BackOffice" Version="12.3.3" />
+	</ItemGroup>
 
-  <ItemGroup>
-    <Content Include="App_Plugins\SiteWarmupDashboard\**" ExcludeFromSingleFile="true" CopyToPublishDirectory="Always" />
-    <None Include="buildTransitive\**" Pack="true" PackagePath="buildTransitive" />
-  </ItemGroup>
+	<ItemGroup>
+		<Content Include="App_Plugins\SiteWarmupDashboard\**" ExcludeFromSingleFile="true" CopyToPublishDirectory="Always" />
+		<None Include="buildTransitive\**" Pack="true" PackagePath="buildTransitive" />
+	</ItemGroup>
 
-  <ItemGroup>
-    <None Remove="App_Plugins\SiteWarmupDashboard\Lang\en-US.xml" />
-    <None Remove="App_Plugins\SiteWarmupDashboard\SiteWarmupDashboard.css" />
-    <None Remove="App_Plugins\SiteWarmupDashboard\SiteWarmupDashboard.html" />
-    <None Remove="App_Plugins\SiteWarmupDashboard\SiteWarmupDashboard.js" />
-  </ItemGroup>
+	<ItemGroup>
+		<None Remove="App_Plugins\SiteWarmupDashboard\Lang\en-US.xml" />
+		<None Remove="App_Plugins\SiteWarmupDashboard\SiteWarmupDashboard.css" />
+		<None Remove="App_Plugins\SiteWarmupDashboard\SiteWarmupDashboard.html" />
+		<None Remove="App_Plugins\SiteWarmupDashboard\SiteWarmupDashboard.js" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<None Update="fafo.png">
+		  <Pack>True</Pack>
+		  <PackagePath>\</PackagePath>
+		</None>
+		<None Update="readme.md" Pack="true" PackagePath="\">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</None>
+	</ItemGroup>
 </Project>

@@ -1,0 +1,49 @@
+{
+  "$schema": "https://marketplace.umbraco.com/umbraco-marketplace-schema.json",
+  "AddOnPackagesRequiredForUmbracoCloud": [],
+  "AlternateCategory": "",
+  "AuthorDetails": {
+    "Name": "Andy Carlier",
+    "Description": "",
+    "Url": "https://github.com/knowledgeworkuk/fafo",
+    "ImageUrl": "",
+    "Contributors": [
+      {
+        "Name": "",
+        "Url": ""
+      }
+    ],
+    "SyncContributorsFromRepository": "false"
+  },
+  "Category": "Developer Tools",
+  "Description": "An Umbraco dashboard for loading all site content to help with caching of newly deployed sites. Created as a working example for a Meetup.",
+  "DiscussionForumUrl": "",
+  "DocumentationUrl": "",
+  "LicenseTypes": [ "Free" ],
+  "IssueTrackerUrl": "",
+  "IsSubPackageOf": "",
+  "PackageType": "Package",
+  "PackagesByAuthor": [],
+  "RelatedPackages": [
+    {
+      "GroupTitle": "",
+      "PackageId": "",
+      "Description": ""
+    }
+  ],
+  "Screenshots": [
+    {
+      "ImageUrl": "",
+      "Caption": ""
+    }
+  ],
+  "Tags": [],
+  "Title": "KnowledgeWork.FAFO.SiteWarmupDashboard",
+  "VersionSpecificPackageIds": [
+    {
+      "UmbracoMajorVersion": 13,
+      "PackageId": "1.0.0"
+    }
+  ],
+  "VideoUrl": ""
+}
