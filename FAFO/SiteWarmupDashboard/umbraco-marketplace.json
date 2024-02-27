@@ -42,7 +42,7 @@
   "VersionSpecificPackageIds": [
     {
       "UmbracoMajorVersion": 13,
-      "PackageId": "1.0.0"
+      "PackageId": "1.0.1"
     }
   ],
   "VideoUrl": ""
